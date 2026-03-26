@@ -1,0 +1,101 @@
+.App {
+  background-color: #1f1f20;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 500px;
+  padding: 50px 50px 90px;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+.head{
+  display: flex;
+  flex-direction: column;
+}
+.head >h2{
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.head >div{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 20px 10px;
+}
+.head >div >div{
+  font-size: 15px;
+}
+.btns{}
+.btns >button{
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 15px;
+}
+.btns >button:nth-of-type(2){
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+.btns >button:hover{
+  color: darkgray;
+}
+
+.list{
+  padding-left: 0;
+  overflow: auto;
+  height: 400px;
+  scrollbar-width: thin; 
+  scrollbar-color: #888 #1f1f20;   
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgb(97, 97, 97);
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.item >span{}
+.item >span >button{
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+}
+.item >span >button:nth-of-type(2){
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+.item >span >button:hover{
+ color: darkgray;
+}
+.done{
+  color: #414141;
+  text-decoration: line-through;
+}
+
+.insert{
+  padding-top: 30px;
+}
+.insert >form{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.insert >form >input{
+  width: 80%;
+  font-size: 18px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.insert >form >button{
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+  padding: 0px 10px;
+  font-size: 15px;
+}
+.insert >form >button:hover{
+  background-color: white;
+  color: black;
+}
