@@ -1,0 +1,9 @@
+# .gitignore //git에 안올리고싶은 파일
+
+#제일 많이 쓰는 방법
+node_modules/ 
+
+# 아래방법들도 쓰이지만 위에 방법을 보통씀
+# /front/node_modules/  
+# /server/node_modules/ 
+# /*/node_modules/  
