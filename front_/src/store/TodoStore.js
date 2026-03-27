@@ -38,12 +38,12 @@ const todoStore = create((set) => ({
     },
     completeTodo: async function(id){
         const res = await axios.put(
-            `${process.env.REACT_APP_APIURL}?id=${id}`, //.env변수사용시=> process.env.+변수
+            `${process.env.REACT_APP_APIURL}/state/?id=${id}`, //.env변수사용시=> process.env.+변수
             {isdone:true}
         );
         set(function(item){
             let updateData = item.data.map(function(obj){
-                if(obj._id == id){
+                if(obj._id === id){
                     obj.isdone = true;
                 }
                 return obj;
