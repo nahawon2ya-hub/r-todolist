@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser')
 
 const todolist = require('./api/todolist.js');
+const news = require('./api/news.js');
 const {connectDB} = require('./db/db_todolist.js');
 const app = express();
 
@@ -13,6 +14,7 @@ app.use(bodyParser.json());
 async function serverStart(){
   await connectDB(); //await 작업이 끝날때까지 아래 명령들이 실행을 못함.
   app.use('/todo',todolist);
+  app.use('/news',news);
 
   app.listen(4000, () => { //listen 서버실행 
     console.log('Server is running on http://localhost:3000')
